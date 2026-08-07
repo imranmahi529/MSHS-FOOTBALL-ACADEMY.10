@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | MSHS Football Academy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ================================
+           GALLERY PAGE
+        ================================= */
+
+        .gallery-page {
+            min-height: 100vh;
+            padding: 150px 0 100px;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,.78),
+                    rgba(0,0,0,.88)
+                ),
+                url("https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/1000065105.jpg")
+                center/cover fixed;
+        }
+
+        .gallery-page::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(8,127,63,.22),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(255,210,31,.10),
+                    transparent 35%
+                );
+
+            pointer-events: none;
+        }
+
+        .gallery-page-header {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin-bottom: 65px;
+        }
+
+        .gallery-page-header .mini-title {
+            color: #ffd21f;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+
+        .gallery-page-header h1 {
+            margin: 15px 0;
+            font-size: clamp(45px, 7vw, 85px);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .gallery-page-header h1 span {
+            color: #ffd21f;
+        }
+
+        .gallery-page-header p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: #aaa;
+            line-height: 1.9;
+            font-size: 14px;
+        }
+
+        /* ================================
+           3D GALLERY
+        ================================= */
+
+        .gallery-page-grid {
+            position: relative;
+            z-index: 3;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+
+            perspective: 1600px;
+        }
+
+        .gallery-page-card {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+
+            border-radius: 28px;
+
+            background: #111;
+
+            border: 1px solid rgba(255,255,255,.10);
+
+            box-shadow:
+                0 25px 60px rgba(0,0,0,.60);
+
+            transform-style: preserve-3d;
+
+            transition:
+                .55s ease;
+        }
+
+        .gallery-page-card:hover {
+            transform:
+                translateY(-15px)
+                rotateX(4deg)
+                rotateY(-4deg)
+                scale(1.015);
+
+            border-color:
+                rgba(255,210,31,.45);
+
+            box-shadow:
+                0 40px 90px rgba(0,0,0,.75),
+                0 0 35px rgba(255,210,31,.08);
+        }
+
+        .gallery-page-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition:
+                transform .8s ease,
+                filter .5s ease;
+        }
+
+        .gallery-page-card:hover img {
+            transform: scale(1.10);
+            filter: brightness(.72) saturate(1.15);
+        }
+
+        .gallery-page-card::after {
+            content: "";
+
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    transparent 35%,
+                    rgba(0,0,0,.90)
+                );
+
+            pointer-events: none;
+        }
+
+        .gallery-card-info {
+            position: absolute;
+            z-index: 5;
+
+            left: 25px;
+            right: 25px;
+            bottom: 22px;
+
+            transform: translateZ(30px);
+        }
+
+        .gallery-card-info small {
+            color: #ffd21f;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .gallery-card-info h3 {
+            margin-top: 7px;
+            font-size: 23px;
+        }
+
+        .gallery-card-info p {
+            margin-top: 5px;
+            color: #aaa;
+            font-size: 11px;
+        }
+
+        .gallery-card-number {
+            position: absolute;
+            z-index: 5;
+
+            top: 20px;
+            left: 22px;
+
+            color: rgba(255,255,255,.22);
+
+            font-family: Arial, sans-serif;
+            font-size: 55px;
+            font-weight: 900;
+
+            transform: translateZ(30px);
+        }
+
+        .gallery-card-icon {
+            position: absolute;
+            z-index: 5;
+
+            top: 20px;
+            right: 20px;
+
+            width: 43px;
+            height: 43px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(255,210,31,.92);
+            color: #050505;
+
+            transform: translateZ(30px);
+
+            transition: .35s ease;
+        }
+
+        .gallery-page-card:hover .gallery-card-icon {
+            transform:
+                translateZ(40px)
+                rotate(90deg);
+        }
+
+        /* ================================
+           BACK BUTTON
+        ================================= */
+
+        .gallery-back {
+            position: relative;
+            z-index: 3;
+
+            display: flex;
+            justify-content: center;
+
+            margin-top: 55px;
+        }
+
+        .gallery-back a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 14px 22px;
+
+            border: 1px solid rgba(255,210,31,.35);
+            border-radius: 13px;
+
+            color: #ffd21f;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            transition: .35s ease;
+        }
+
+        .gallery-back a:hover {
+            background: #ffd21f;
+            color: #050505;
+
+            transform: translateY(-5px);
+        }
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media(max-width: 900px) {
+
+            .gallery-page-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+        }
+
+        @media(max-width: 600px) {
+
+            .gallery-page {
+                padding: 120px 0 70px;
+            }
+
+            .gallery-page-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .gallery-page-card {
+                height: 380px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="gallery-page">
+
+        <div class="container">
+
+            <!-- HEADER -->
+
+            <header class="gallery-page-header">
+
+                <div class="mini-title">
+                    MSHS FOOTBALL ACADEMY
+                </div>
+
+                <h1>
+                    OUR <span>GALLERY</span>
+                </h1>
+
+                <p>
+                    আমাদের একাডেমির স্মরণীয় মুহূর্ত,
+                    খেলোয়াড়, ফুটবল কার্যক্রম ও
+                    বিশেষ আয়োজনের ছবিগুলো এখানে
+                    3D স্টাইলে সংরক্ষিত থাকবে।
+                </p>
+
+            </header>
+
+
+            <!-- 3D GALLERY -->
+
+            <section class="gallery-page-grid">
+
+                <!-- IMAGE 01 -->
+
+                <div class="gallery-page-card">
+
+                    <span class="gallery-card-number">
+                        01
+                    </span>
+
+                    <span class="gallery-card-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </span>
+
+                    <img
+                        src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_000000001604820b9ca0f506fd6a221a.png"
+                        alt="Imran Hussain Mahi">
+
+                    <div class="gallery-card-info">
+
+                        <small>
+                            FOUNDER
+                        </small>
+
+                        <h3>
+                            Imran Hussain Mahi
+                        </h3>
+
+                        <p>
+                            প্রতিষ্ঠাতা — MSHS Football Academy
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGE 02 -->
+
+                <div class="gallery-page-card">
+
+                    <span class="gallery-card-number">
+                        02
+                    </span>
+
+                    <span class="gallery-card-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </span>
+
+                    <img
+                        src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/FB_IMG_1786139968489.jpg"
+                        alt="Sajjad Hossain">
+
+                    <div class="gallery-card-info">
+
+                        <small>
+                            MEMORIAL
+                        </small>
+
+                        <h3>
+                            Sajjad Hossain
+                        </h3>
+
+                        <p>
+                            যার নামে প্রতিষ্ঠিত এই একাডেমি
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGE 03 -->
+
+                <div class="gallery-page-card">
+
+                    <span class="gallery-card-number">
+                        03
+                    </span>
+
+                    <span class="gallery-card-icon">
+                        <i class="fa-solid fa-expand"></i>
+                    </span>
+
+                    <img
+                        src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/1000065105.jpg"
+                        alt="MSHS Football Academy">
+
+                    <div class="gallery-card-info">
+
+                        <small>
+                            ACADEMY
+                        </small>
+
+                        <h3>
+                            MSHS Football Academy
+                        </h3>
+
+                        <p>
+                            আমাদের স্পোর্টস থিম
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BACK -->
+
+            <div class="gallery-back">
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    BACK TO HOME
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- SIMPLE 3D IMAGE VIEWER -->
+
+    <script>
+
+        document
+            .querySelectorAll(".gallery-page-card")
+            .forEach(card => {
+
+                card.addEventListener("click", () => {
+
+                    const image =
+                        card.querySelector("img");
+
+                    const viewer =
+                        document.createElement("div");
+
+                    viewer.style.cssText = `
+                        position:fixed;
+                        inset:0;
+                        z-index:99999;
+                        background:rgba(0,0,0,.94);
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        padding:25px;
+                        cursor:zoom-out;
+                        backdrop-filter:blur(12px);
+                    `;
+
+                    const img =
+                        document.createElement("img");
+
+                    img.src = image.src;
+
+                    img.style.cssText = `
+                        max-width:95%;
+                        max-height:90vh;
+                        object-fit:contain;
+                        border-radius:20px;
+                        box-shadow:0 30px 100px rgba(0,0,0,.8);
+                        transform:scale(.85);
+                        transition:.35s ease;
+                    `;
+
+                    viewer.appendChild(img);
+
+                    document.body.appendChild(viewer);
+
+                    requestAnimationFrame(() => {
+                        img.style.transform =
+                            "scale(1)";
+                    });
+
+                    viewer.addEventListener(
+                        "click",
+                        () => viewer.remove()
+                    );
+
+                });
+
+            });
+
+    </script>
+
+</body>
+</html>
