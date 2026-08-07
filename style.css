@@ -5496,3 +5496,473 @@ button{
 /* =====================================================
    END OF PART 4
 ===================================================== */
+/* =====================================================
+   MSHS FOOTBALL ACADEMY
+   STYLE.CSS — PART 5
+   FINAL POLISH + ANIMATIONS + FIXES
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL 3D POLISH
+===================================================== */
+
+section{
+
+    isolation:isolate;
+
+}
+
+
+.container{
+
+    position:relative;
+
+}
+
+
+/* =====================================================
+   SMOOTH REVEAL
+===================================================== */
+
+@keyframes revealUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes revealLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateX(-35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+
+@keyframes revealRight{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateX(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   CARD LIGHT EFFECT
+===================================================== */
+
+.player-card::after,
+.gallery-item::after,
+.person-mini-card::after,
+.sponsor-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-80%;
+
+    width:50%;
+
+    height:300%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.08),
+            transparent
+        );
+
+    transform:rotate(25deg);
+
+    transition:
+        left .8s ease;
+
+    pointer-events:none;
+
+}
+
+
+.player-card:hover::after,
+.gallery-item:hover::after,
+.person-mini-card:hover::after,
+.sponsor-card:hover::after{
+
+    left:140%;
+
+}
+
+
+/* =====================================================
+   3D HOVER DEPTH
+===================================================== */
+
+.player-card-content,
+.gallery-item-overlay,
+.person-mini-content,
+.sponsor-placeholder{
+
+    transform:translateZ(20px);
+
+}
+
+
+/* =====================================================
+   GOLD SHINE BUTTON
+===================================================== */
+
+.hero-button.primary,
+.section-button,
+.join-button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.hero-button.primary::before,
+.section-button::before,
+.join-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    transform:skewX(-25deg);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.55),
+            transparent
+        );
+
+    transition:
+        left .7s ease;
+
+}
+
+
+.hero-button.primary:hover::before,
+.section-button:hover::before,
+.join-button:hover::before{
+
+    left:140%;
+
+}
+
+
+/* =====================================================
+   IMAGE HOVER ZOOM
+===================================================== */
+
+.about-preview-image,
+.founder-preview-image,
+.memorial-image-area{
+
+    perspective:1200px;
+
+}
+
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#050505;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:
+
+        linear-gradient(
+            var(--green),
+            var(--gold)
+        );
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--gold);
+
+}
+
+
+/* =====================================================
+   TEXT SELECTION
+===================================================== */
+
+::selection{
+
+    background:var(--gold);
+
+    color:#050505;
+
+}
+
+
+/* =====================================================
+   FOCUS ACCESSIBILITY
+===================================================== */
+
+a:focus-visible,
+button:focus-visible{
+
+    outline:
+        2px solid var(--gold);
+
+    outline-offset:4px;
+
+}
+
+
+/* =====================================================
+   TOUCH DEVICES
+===================================================== */
+
+@media(hover:none){
+
+    .player-card:hover,
+    .gallery-item:hover,
+    .person-mini-card:hover,
+    .sponsor-card:hover{
+
+        transform:none;
+
+    }
+
+
+    .hero-logo-card:hover{
+
+        transform:
+            rotateY(-8deg)
+            rotateX(4deg);
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE FIX
+===================================================== */
+
+@media(max-width:400px){
+
+    .brand-text span{
+
+        display:none;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:34px;
+
+    }
+
+
+    .hero-stats{
+
+        gap:18px;
+
+    }
+
+
+    .hero-stat strong{
+
+        font-size:21px;
+
+    }
+
+
+    .hero-stat span{
+
+        font-size:8px;
+
+    }
+
+
+    .founder-image-box,
+    .memorial-frame{
+
+        width:230px;
+
+        height:300px;
+
+    }
+
+
+    .person-mini-card{
+
+        grid-template-columns:
+            100px 1fr;
+
+    }
+
+
+    .person-mini-image{
+
+        height:170px;
+
+    }
+
+
+    .person-mini-content h3{
+
+        font-size:17px;
+
+    }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:auto !important;
+
+        transition-duration:
+            .01ms !important;
+
+    }
+
+}
+
+
+/* =====================================================
+   FINAL CSS
+===================================================== */
+
+body{
+
+    min-width:320px;
+
+}
+
+
+section{
+
+    width:100%;
+
+}
+
+
+button{
+
+    border:none;
+
+}
+
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+}
+
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+/* =====================================================
+   STYLE.CSS COMPLETE
+===================================================== */
