@@ -1,0 +1,2460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Imran Hussain Mahi | Founder & Director</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+<style>
+
+/* =====================================================
+   FOUNDER PAGE
+===================================================== */
+
+:root{
+
+    --green:#087f3f;
+    --dark-green:#04351d;
+    --gold:#ffd21f;
+    --black:#050505;
+    --white:#ffffff;
+    --muted:#999;
+
+}
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    background:var(--black);
+    color:var(--white);
+
+    font-family:
+        "Hind Siliguri",
+        sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+
+.container{
+
+    width:min(1180px,92%);
+
+    margin:auto;
+
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+.founder-page{
+
+    position:relative;
+
+    background:
+
+        linear-gradient(
+            rgba(0,0,0,.78),
+            rgba(0,0,0,.94)
+        ),
+
+        url("https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/1000065105.jpg")
+        center/cover fixed;
+
+}
+
+
+.founder-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(8,127,63,.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(255,210,31,.08),
+            transparent 28%
+        );
+
+}
+
+
+/* =====================================================
+   TOP NAV
+===================================================== */
+
+.founder-nav{
+
+    position:relative;
+
+    z-index:10;
+
+    padding:22px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,.08);
+
+    background:
+        rgba(0,0,0,.45);
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+.nav-inner{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+
+.nav-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.nav-brand img{
+
+    width:48px;
+
+    height:48px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+}
+
+
+.nav-brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.nav-brand-text strong{
+
+    font-family:Arial,sans-serif;
+
+    font-size:17px;
+
+}
+
+
+.nav-brand-text span{
+
+    color:var(--gold);
+
+    font-size:8px;
+
+    letter-spacing:1.5px;
+
+}
+
+
+.back-home{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:11px 17px;
+
+    border:1px solid
+        rgba(255,210,31,.3);
+
+    border-radius:12px;
+
+    color:var(--gold);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    transition:.3s ease;
+
+}
+
+
+.back-home:hover{
+
+    background:var(--gold);
+
+    color:#050505;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.founder-hero{
+
+    position:relative;
+
+    min-height:760px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:100px 0;
+
+}
+
+
+.founder-hero-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+
+/* =====================================================
+   3D PHOTO
+===================================================== */
+
+.founder-photo-area{
+
+    display:flex;
+
+    justify-content:center;
+
+    perspective:1500px;
+
+}
+
+
+.founder-photo-card{
+
+    position:relative;
+
+    width:390px;
+
+    height:520px;
+
+    padding:10px;
+
+    border-radius:35px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            var(--gold),
+            var(--green),
+            #111
+        );
+
+    box-shadow:
+
+        0 45px 100px
+        rgba(0,0,0,.75),
+
+        0 0 50px
+        rgba(8,127,63,.14);
+
+    transform:
+
+        rotateY(-9deg)
+        rotateX(4deg);
+
+    transform-style:preserve-3d;
+
+    animation:
+        photoFloat 5s ease-in-out infinite;
+
+}
+
+
+.founder-photo-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:15px;
+
+    border:1px solid
+        rgba(255,255,255,.25);
+
+    border-radius:27px;
+
+    pointer-events:none;
+
+}
+
+
+.founder-photo-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:27px;
+
+    display:block;
+
+}
+
+
+.photo-label{
+
+    position:absolute;
+
+    z-index:5;
+
+    left:25px;
+
+    bottom:25px;
+
+    padding:10px 15px;
+
+    border-radius:10px;
+
+    background:
+        rgba(0,0,0,.72);
+
+    border:
+        1px solid
+        rgba(255,210,31,.35);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.photo-label small{
+
+    color:var(--gold);
+
+    font-size:8px;
+
+    letter-spacing:2px;
+
+}
+
+
+.photo-label strong{
+
+    display:block;
+
+    margin-top:3px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:14px;
+
+}
+
+
+@keyframes photoFloat{
+
+    0%,100%{
+
+        transform:
+            rotateY(-9deg)
+            rotateX(4deg)
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            rotateY(-4deg)
+            rotateX(2deg)
+            translateY(-13px);
+
+    }
+
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.founder-kicker{
+
+    color:var(--gold);
+
+    font-family:Arial,sans-serif;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+}
+
+
+.founder-hero h1{
+
+    margin-top:15px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:
+        clamp(45px,6vw,80px);
+
+    line-height:.98;
+
+}
+
+
+.founder-hero h1 span{
+
+    display:block;
+
+    color:var(--gold);
+
+}
+
+
+.founder-role{
+
+    margin-top:22px;
+
+    color:#ccc;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+.founder-intro{
+
+    margin-top:25px;
+
+    max-width:650px;
+
+    color:#aaa;
+
+    font-size:15px;
+
+    line-height:2;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:30px;
+
+}
+
+
+.hero-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:14px 20px;
+
+    border-radius:13px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    transition:.35s ease;
+
+}
+
+
+.hero-btn.primary{
+
+    background:var(--gold);
+
+    color:#050505;
+
+}
+
+
+.hero-btn.secondary{
+
+    border:1px solid
+        rgba(255,255,255,.15);
+
+    color:#ddd;
+
+}
+
+
+.hero-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+.hero-btn.primary:hover{
+
+    box-shadow:
+        0 15px 35px
+        rgba(255,210,31,.18);
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.founder-section{
+
+    position:relative;
+
+    padding:110px 0;
+
+    border-top:
+        1px solid rgba(255,255,255,.06);
+
+}
+
+
+.section-heading{
+
+    margin-bottom:45px;
+
+}
+
+
+.section-heading small{
+
+    color:var(--gold);
+
+    font-family:Arial,sans-serif;
+
+    font-size:9px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+}
+
+
+.section-heading h2{
+
+    margin-top:10px;
+
+    font-size:
+        clamp(32px,5vw,55px);
+
+    line-height:1.15;
+
+}
+
+
+.section-heading h2 span{
+
+    color:var(--gold);
+
+}
+
+
+.section-heading p{
+
+    max-width:700px;
+
+    margin-top:15px;
+
+    color:#777;
+
+    line-height:1.9;
+
+    font-size:13px;
+
+}
+
+
+/* =====================================================
+   STORY CARDS
+===================================================== */
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+.story-card{
+
+    position:relative;
+
+    padding:35px;
+
+    min-height:260px;
+
+    border-radius:25px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.025)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+    transform-style:preserve-3d;
+
+    transition:.45s ease;
+
+}
+
+
+.story-card:hover{
+
+    transform:
+        translateY(-9px)
+        rotateX(2deg);
+
+    border-color:
+        rgba(255,210,31,.28);
+
+    box-shadow:
+        0 30px 70px
+        rgba(0,0,0,.45);
+
+}
+
+
+.story-icon{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:
+        rgba(255,210,31,.10);
+
+    color:var(--gold);
+
+    font-size:20px;
+
+    transform:translateZ(20px);
+
+}
+
+
+.story-card h3{
+
+    margin-top:22px;
+
+    font-size:22px;
+
+}
+
+
+.story-card .en{
+
+    margin-top:14px;
+
+    color:#aaa;
+
+    line-height:1.9;
+
+    font-size:13px;
+
+}
+
+
+.story-card .bn{
+
+    margin-top:13px;
+
+    color:#777;
+
+    line-height:2;
+
+    font-size:13px;
+
+}
+
+
+.story-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+
+    height:170px;
+
+    right:-80px;
+
+    bottom:-80px;
+
+    border-radius:50%;
+
+    background:
+        rgba(8,127,63,.10);
+
+}
+
+
+/* =====================================================
+   ACADEMY VISION
+===================================================== */
+
+.academy-section{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(8,127,63,.10),
+            transparent
+        );
+
+}
+
+
+.vision-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+
+.vision-card{
+
+    min-height:190px;
+
+    padding:25px 20px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    transition:.4s ease;
+
+}
+
+
+.vision-card:hover{
+
+    transform:
+        translateY(-8px)
+        rotateX(3deg);
+
+    border-color:
+        rgba(255,210,31,.3);
+
+}
+
+
+.vision-card i{
+
+    color:var(--gold);
+
+    font-size:25px;
+
+}
+
+
+.vision-card h3{
+
+    margin-top:18px;
+
+    font-size:17px;
+
+}
+
+
+.vision-card p{
+
+    margin-top:8px;
+
+    color:#777;
+
+    font-size:11px;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.skills-section{
+
+    background:#030303;
+
+}
+
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:14px;
+
+}
+
+
+.skill{
+
+    padding:22px;
+
+    border-radius:17px;
+
+    background:#0d0d0d;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    transition:.3s ease;
+
+}
+
+
+.skill:hover{
+
+    transform:translateY(-6px);
+
+    border-color:
+        rgba(255,210,31,.3);
+
+}
+
+
+.skill i{
+
+    color:var(--gold);
+
+    margin-right:8px;
+
+}
+
+
+.skill span{
+
+    color:#aaa;
+
+    font-size:12px;
+
+}
+
+
+/* =====================================================
+   VISION QUOTE
+===================================================== */
+
+.quote-section{
+
+    padding:120px 0;
+
+    text-align:center;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #064c2b,
+            #031c10
+        );
+
+}
+
+
+.quote-icon{
+
+    color:var(--gold);
+
+    font-size:35px;
+
+}
+
+
+.quote-section h2{
+
+    max-width:850px;
+
+    margin:25px auto;
+
+    font-family:Arial,sans-serif;
+
+    font-size:
+        clamp(28px,4vw,48px);
+
+    line-height:1.35;
+
+}
+
+
+.quote-section p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#aaa;
+
+    line-height:2;
+
+}
+
+
+/* =====================================================
+   MOTTO
+===================================================== */
+
+.motto-section{
+
+    text-align:center;
+
+    padding:100px 0;
+
+}
+
+
+.motto-section small{
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+    font-size:9px;
+
+    font-weight:700;
+
+}
+
+
+.motto-section h2{
+
+    margin-top:20px;
+
+    font-family:Arial,sans-serif;
+
+    font-size:
+        clamp(28px,5vw,55px);
+
+}
+
+
+.motto-section p{
+
+    margin-top:15px;
+
+    color:#777;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.founder-footer{
+
+    padding:35px 0;
+
+    text-align:center;
+
+    border-top:
+        1px solid rgba(255,255,255,.07);
+
+    background:#020202;
+
+}
+
+
+.founder-footer p{
+
+    color:#666;
+
+    font-size:10px;
+
+}
+
+
+.founder-footer strong{
+
+    color:var(--gold);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px){
+
+    .founder-hero-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:60px;
+
+    }
+
+
+    .founder-photo-area{
+
+        order:1;
+
+    }
+
+
+    .founder-photo-card{
+
+        width:320px;
+
+        height:430px;
+
+    }
+
+
+    .founder-hero-content{
+
+        order:2;
+
+    }
+
+
+    .founder-intro{
+
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+
+    .vision-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+
+    .skills-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:650px){
+
+    .founder-nav{
+
+        padding:15px 0;
+
+    }
+
+
+    .nav-brand img{
+
+        width:40px;
+        height:40px;
+
+    }
+
+
+    .nav-brand-text strong{
+
+        font-size:14px;
+
+    }
+
+
+    .back-home{
+
+        padding:9px 12px;
+
+        font-size:9px;
+
+    }
+
+
+    .founder-hero{
+
+        min-height:auto;
+
+        padding:75px 0;
+
+    }
+
+
+    .founder-photo-card{
+
+        width:260px;
+
+        height:350px;
+
+    }
+
+
+    .founder-hero h1{
+
+        font-size:45px;
+
+    }
+
+
+    .story-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .vision-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .skills-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+
+    .founder-section{
+
+        padding:75px 0;
+
+    }
+
+}
+
+
+@media(max-width:400px){
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   END
+===================================================== */
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="founder-page">
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="founder-nav">
+
+        <div class="container nav-inner">
+
+            <a href="index.html"
+               class="nav-brand">
+
+                <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_000000001604820b9ca0f506fd6a221a.png"
+                    alt="MSHS Academy">
+
+                <div class="nav-brand-text">
+
+                    <strong>
+                        MSHS FOOTBALL ACADEMY
+                    </strong>
+
+                    <span>
+                        YOUTH • FOOTBALL • FUTURE
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <a href="index.html"
+               class="back-home">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                BACK TO HOME
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <header class="founder-hero">
+
+        <div class="container founder-hero-grid">
+
+
+            <!-- PHOTO -->
+
+            <div class="founder-photo-area">
+
+                <div class="founder-photo-card">
+
+                    <img
+                        src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_000000001604820b9ca0f506fd6a221a.png"
+                        alt="Imran Hussain Mahi">
+
+                    <div class="photo-label">
+
+                        <small>
+                            FOUNDER & DIRECTOR
+                        </small>
+
+                        <strong>
+                            IMRAN HUSSAIN MAHI
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="founder-hero-content">
+
+                <div class="founder-kicker">
+                    FOUNDER & DIRECTOR
+                </div>
+
+                <h1>
+                    IMRAN
+                    <span>HUSSAIN MAHI</span>
+                </h1>
+
+                <div class="founder-role">
+
+                    প্রতিষ্ঠাতা ও পরিচালক
+
+                </div>
+
+                <p class="founder-intro">
+
+                    Imran Hussain Mahi is a young entrepreneur,
+                    football enthusiast, digital creator,
+                    website designer, content creator,
+                    editor and visionary leader from Bangladesh.
+
+                    <br><br>
+
+                    ইমরান হোসাইন মাহি বাংলাদেশের একজন তরুণ
+                    উদ্যোক্তা, ফুটবলপ্রেমী, ডিজিটাল ক্রিয়েটর,
+                    ওয়েবসাইট ডিজাইনার, কনটেন্ট ক্রিয়েটর,
+                    এডিটর এবং স্বপ্নদর্শী তরুণ নেতৃত্ব।
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#story"
+                       class="hero-btn primary">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        MY STORY
+
+                    </a>
+
+
+                    <a href="#academy"
+                       class="hero-btn secondary">
+
+                        <i class="fa-solid fa-futbol"></i>
+
+                        MY ACADEMY
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         STORY
+    ================================================== -->
+
+    <section
+        id="story"
+        class="founder-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <small>
+                    MY JOURNEY
+                </small>
+
+                <h2>
+                    MY STORY
+                    <span>| আমার গল্প</span>
+                </h2>
+
+            </div>
+
+
+            <div class="story-grid">
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                    </div>
+
+                    <h3>
+                        Curiosity & Creativity
+                    </h3>
+
+                    <p class="en">
+
+                        My journey began with curiosity,
+                        creativity and a strong desire
+                        to build something of my own.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমার যাত্রা শুরু হয়েছে কৌতূহল,
+                        সৃজনশীলতা এবং নিজের কিছু তৈরি
+                        করার প্রবল ইচ্ছা থেকে।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+
+                        <i class="fa-solid fa-rocket"></i>
+
+                    </div>
+
+                    <h3>
+                        Dream Without Limits
+                    </h3>
+
+                    <p class="en">
+
+                        I believe that age should never
+                        be a limitation to dreaming big.
+                        Determination, discipline and
+                        hard work can turn an idea
+                        into something meaningful.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমি বিশ্বাস করি, বড় স্বপ্ন দেখার
+                        ক্ষেত্রে বয়স কখনো বাধা হতে পারে না।
+                        দৃঢ় সংকল্প, শৃঙ্খলা এবং কঠোর পরিশ্রম
+                        একটি ধারণাকে অর্থবহ কিছুতে
+                        পরিণত করতে পারে।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+
+                        <i class="fa-solid fa-futbol"></i>
+
+                    </div>
+
+                    <h3>
+                        My Love For Football
+                    </h3>
+
+                    <p class="en">
+
+                        Football is more than just a game
+                        to me. It represents discipline,
+                        teamwork, leadership, responsibility,
+                        patience and courage.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমার কাছে ফুটবল শুধু একটি খেলা নয়।
+                        ফুটবল মানে শৃঙ্খলা, দলগত কাজ,
+                        নেতৃত্ব, দায়িত্ববোধ, ধৈর্য এবং
+                        সামনে এগিয়ে যাওয়ার সাহস।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+
+                        <i class="fa-solid fa-people-group"></i>
+
+                    </div>
+
+                    <h3>
+                        Leadership
+                    </h3>
+
+                    <p class="en">
+
+                        Football has allowed me to experience
+                        the game not only as a player,
+                        but also as an organizer,
+                        director and leader.
+
+                    </p>
+
+                    <p class="bn">
+
+                        ফুটবল আমাকে শুধু একজন খেলোয়াড়
+                        হিসেবেই নয়, একজন সংগঠক,
+                        পরিচালক এবং নেতৃত্বদাতা হিসেবেও
+                        কাজ করার সুযোগ দিয়েছে।
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ACADEMY
+    ================================================== -->
+
+    <section
+        id="academy"
+        class="founder-section academy-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <small>
+                    MY FOOTBALL MISSION
+                </small>
+
+                <h2>
+
+                    MORHUM SAJJAD HOSSAIN
+                    <span>SMRITI FOOTBALL ACADEMY</span>
+
+                </h2>
+
+                <p>
+
+                    Founder & Director | প্রতিষ্ঠাতা ও পরিচালক
+
+                </p>
+
+            </div>
+
+
+            <div class="story-grid">
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+
+                        <i class="fa-solid fa-trophy"></i>
+
+                    </div>
+
+                    <h3>
+                        Our Vision
+                    </h3>
+
+                    <p class="en">
+
+                        My vision is to create a professional,
+                        disciplined and positive environment
+                        where young footballers can train,
+                        learn, compete and grow.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমার লক্ষ্য হলো এমন একটি সুন্দর,
+                        শৃঙ্খলাবদ্ধ ও ইতিবাচক পরিবেশ তৈরি করা,
+                        যেখানে তরুণ ফুটবলাররা প্রশিক্ষণ নিতে,
+                        শিখতে, প্রতিযোগিতা করতে এবং
+                        নিজেদের প্রতিভা বিকশিত করতে পারে।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+
+                        <i class="fa-solid fa-child-reaching"></i>
+
+                    </div>
+
+                    <h3>
+                        Player Development
+                    </h3>
+
+                    <p class="en">
+
+                        I want every player to understand that
+                        becoming a great footballer is not only
+                        about scoring goals.
+
+                    </p>
+
+                    <p class="bn">
+
+                        একজন ভালো ফুটবলার হওয়া শুধু গোল
+                        করার বিষয় নয়। এর সঙ্গে রয়েছে
+                        শৃঙ্খলা, সম্মান, দলগত কাজ,
+                        কঠোর পরিশ্রম এবং ভালো চরিত্র।
+
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="vision-grid"
+                 style="margin-top:25px;">
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-futbol"></i>
+
+                    <h3>
+                        Youth Football
+                    </h3>
+
+                    <p>
+                        তরুণ ফুটবলের উন্নয়ন
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-dumbbell"></i>
+
+                    <h3>
+                        Professional Training
+                    </h3>
+
+                    <p>
+                        মানসম্মত ও নিয়মিত প্রশিক্ষণ
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <h3>
+                        Mental Strength
+                    </h3>
+
+                    <p>
+                        মানসিক শক্তি ও শৃঙ্খলা
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-people-group"></i>
+
+                    <h3>
+                        Teamwork
+                    </h3>
+
+                    <p>
+                        দলগত কাজ ও নেতৃত্বের বিকাশ
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-seedling"></i>
+
+                    <h3>
+                        Young Talent
+                    </h3>
+
+                    <p>
+                        নতুন প্রতিভা খুঁজে বের করা
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-medal"></i>
+
+                    <h3>
+                        Competitive Football
+                    </h3>
+
+                    <p>
+                        প্রতিযোগিতামূলক ফুটবলের প্রস্তুতি
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <h3>
+                        Player Progress
+                    </h3>
+
+                    <p>
+                        খেলোয়াড়দের অগ্রগতি পর্যবেক্ষণ
+                    </p>
+
+                </div>
+
+
+                <div class="vision-card">
+
+                    <i class="fa-solid fa-flag"></i>
+
+                    <h3>
+                        Future Bangladesh
+                    </h3>
+
+                    <p>
+                        বাংলাদেশের ভবিষ্যৎ ফুটবলার তৈরি
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         DIGITAL CREATOR
+    ================================================== -->
+
+    <section class="founder-section skills-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <small>
+                    DIGITAL WORLD
+                </small>
+
+                <h2>
+
+                    DIGITAL CREATOR
+                    <span>& WEBSITE DESIGNER</span>
+
+                </h2>
+
+                <p>
+
+                    Alongside football, I have developed
+                    a strong passion for technology and
+                    the digital world.
+
+                    <br><br>
+
+                    ফুটবলের পাশাপাশি প্রযুক্তি ও ডিজিটাল
+                    জগতের প্রতি আমার গভীর আগ্রহ রয়েছে।
+
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Website Design</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Digital Projects</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-palette"></i>
+                    <span>Graphic Design</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Content Creation</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span>Social Media Content</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Digital Marketing</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Video Editing</span>
+                </div>
+
+                <div class="skill">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>Creative Branding</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ENTREPRENEUR
+    ================================================== -->
+
+    <section class="founder-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <small>
+                    ENTREPRENEURIAL MINDSET
+                </small>
+
+                <h2>
+                    BUILDING
+                    <span>THE FUTURE</span>
+                </h2>
+
+            </div>
+
+
+            <div class="story-grid">
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3>
+                        Entrepreneur
+                    </h3>
+
+                    <p class="en">
+
+                        I consider myself a learner and
+                        an entrepreneur at heart. I am interested
+                        in building businesses, digital platforms,
+                        sports initiatives and creative projects.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমি নিজেকে একজন শিক্ষার্থী এবং
+                        উদ্যোক্তা হিসেবে দেখি। ব্যবসা,
+                        ডিজিটাল প্ল্যাটফর্ম, ক্রীড়া উদ্যোগ
+                        এবং সৃজনশীল প্রজেক্ট তৈরির প্রতি
+                        আমার গভীর আগ্রহ রয়েছে।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <h3>
+                        Create Opportunities
+                    </h3>
+
+                    <p class="en">
+
+                        Rather than waiting for opportunities,
+                        I believe in creating opportunities
+                        through ideas, hard work and persistence.
+
+                    </p>
+
+                    <p class="bn">
+
+                        সুযোগের অপেক্ষায় বসে থাকার পরিবর্তে
+                        নিজের চিন্তা, পরিশ্রম এবং অধ্যবসায়ের
+                        মাধ্যমে নিজের সুযোগ নিজেকেই
+                        তৈরি করতে হয়।
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         LEADERSHIP
+    ================================================== -->
+
+    <section class="founder-section academy-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <small>
+                    LEADERSHIP & VISION
+                </small>
+
+                <h2>
+                    LEAD WITH
+                    <span>PURPOSE</span>
+                </h2>
+
+            </div>
+
+
+            <div class="story-grid">
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+
+                    <h3>
+                        Responsible Leadership
+                    </h3>
+
+                    <p class="en">
+
+                        A successful organization needs
+                        proper planning, responsible management,
+                        discipline, communication and a
+                        clear vision.
+
+                    </p>
+
+                    <p class="bn">
+
+                        একটি সফল প্রতিষ্ঠানের জন্য প্রয়োজন
+                        সঠিক পরিকল্পনা, দায়িত্বশীল ব্যবস্থাপনা,
+                        শৃঙ্খলা, যোগাযোগ এবং সুস্পষ্ট
+                        ভবিষ্যৎ পরিকল্পনা।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <h3>
+                        Empower Young People
+                    </h3>
+
+                    <p class="en">
+
+                        My goal is to build an environment
+                        where every young person feels valued,
+                        supported and motivated to become better.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমার লক্ষ্য হলো এমন পরিবেশ তৈরি করা,
+                        যেখানে প্রতিটি তরুণ নিজেকে গুরুত্বপূর্ণ
+                        মনে করবে, সহযোগিতা পাবে এবং নিজেকে
+                        আরও ভালো করার জন্য অনুপ্রাণিত হবে।
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         YOUTH VISION
+    ================================================== -->
+
+    <section class="quote-section">
+
+        <div class="container">
+
+            <div class="quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+
+            <h2>
+                Every young person has potential.
+            </h2>
+
+            <p>
+
+                প্রতিটি তরুণের মধ্যেই সম্ভাবনা রয়েছে।
+                সঠিক পরিবেশ, সঠিক দিকনির্দেশনা এবং
+                বিশ্বাস—একজন তরুণের জীবন বদলে দিতে পারে।
+
+                <br><br>
+
+                Through football, technology and youth-focused
+                initiatives, I want to inspire young people
+                to develop their skills and work toward
+                their dreams.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FUTURE GOAL
+    ================================================== -->
+
+    <section class="founder-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <small>
+                    MY FUTURE GOAL
+                </small>
+
+                <h2>
+                    DREAM
+                    <span>BIGGER</span>
+                </h2>
+
+            </div>
+
+
+            <div class="story-grid">
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <h3>
+                        Build Something Bigger
+                    </h3>
+
+                    <p class="en">
+
+                        My dream is to build something bigger
+                        than a personal brand. I want to create
+                        platforms, organizations and initiatives
+                        that create real opportunities for
+                        young people.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমার স্বপ্ন শুধু একটি ব্যক্তিগত ব্র্যান্ড
+                        তৈরি করা নয়। আমি এমন প্ল্যাটফর্ম,
+                        প্রতিষ্ঠান ও উদ্যোগ তৈরি করতে চাই,
+                        যা সত্যিকার অর্থে তরুণদের জন্য
+                        নতুন সুযোগ তৈরি করবে।
+
+                    </p>
+
+                </article>
+
+
+                <article class="story-card">
+
+                    <div class="story-icon">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+
+                    <h3>
+                        Future Footballers
+                    </h3>
+
+                    <p class="en">
+
+                        I dream of seeing talented young players
+                        receive proper guidance and eventually
+                        represent their clubs, districts,
+                        divisions and one day Bangladesh.
+
+                    </p>
+
+                    <p class="bn">
+
+                        আমার স্বপ্ন হলো প্রতিভাবান তরুণ
+                        খেলোয়াড়রা সঠিক দিকনির্দেশনা পাবে এবং
+                        একদিন তারা তাদের ক্লাব, জেলা, বিভাগ
+                        এবং সর্বোপরি বাংলাদেশের প্রতিনিধিত্ব করবে।
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PHILOSOPHY
+    ================================================== -->
+
+    <section class="motto-section">
+
+        <div class="container">
+
+            <small>
+                MY PHILOSOPHY | আমার জীবনদর্শন
+            </small>
+
+            <h2>
+                DREAM BIG.
+                <br>
+                START SMALL.
+                <br>
+                STAY CONSISTENT.
+            </h2>
+
+            <p>
+
+                বড় স্বপ্ন দেখো।
+                ছোট থেকে শুরু করো।
+                নিয়মিত চেষ্টা করে যাও।
+                শেখা কখনো বন্ধ করো না।
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOUNDER MESSAGE
+    ================================================== -->
+
+    <section class="quote-section">
+
+        <div class="container">
+
+            <div class="quote-icon">
+                <i class="fa-solid fa-message"></i>
+            </div>
+
+            <h2>
+                Believe in yourself.
+            </h2>
+
+            <p>
+
+                To every young person who has a dream:
+                Believe in yourself.
+
+                <br><br>
+
+                যে তরুণের মনে একটি স্বপ্ন আছে—
+                নিজের ওপর বিশ্বাস রাখো।
+
+                <br><br>
+
+                You do not need to have everything today.
+                Start with what you have. Learn every day.
+                Work when nobody is watching. Accept your
+                mistakes. Stay disciplined. And never give up
+                on the dream that makes you want to become better.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MOTTO
+    ================================================== -->
+
+    <section class="motto-section">
+
+        <div class="container">
+
+            <small>
+                MY MOTTO | আমার মূলমন্ত্র
+            </small>
+
+            <h2>
+
+                “BUILD WITH PURPOSE.
+                <br>
+                LEAD WITH PASSION.
+                <br>
+                INSPIRE THE NEXT GENERATION.”
+
+            </h2>
+
+            <p>
+
+                “লক্ষ্য নিয়ে গড়ে তোলো।
+                ভালোবাসা দিয়ে নেতৃত্ব দাও।
+                পরবর্তী প্রজন্মকে অনুপ্রাণিত করো।”
+
+            </p>
+
+            <br>
+
+            <strong style="color:#ffd21f;">
+                — IMRAN HUSSAIN MAHI
+            </strong>
+
+            <br><br>
+
+            <span style="color:#777;font-size:12px;">
+                Founder & Director |
+                প্রতিষ্ঠাতা ও পরিচালক
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="founder-footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026
+                <strong>
+                    IMRAN HUSSAIN MAHI
+                </strong>
+
+                |
+
+                Founder & Director
+
+                |
+
+                Morhum Sajjad Hossain Smriti Football Academy
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</div>
+
+
+<!-- =====================================================
+     SIMPLE SCROLL REVEAL
+====================================================== -->
+
+<script>
+
+const sections =
+    document.querySelectorAll(
+        ".founder-section, .quote-section, .motto-section"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting){
+
+                    entry.target.style.opacity = "1";
+
+                    entry.target.style.transform =
+                        "translateY(0)";
+
+                }
+
+            });
+
+        },
+        {
+            threshold:.08
+        }
+    );
+
+
+sections.forEach(section => {
+
+    section.style.opacity = "0";
+
+    section.style.transform =
+        "translateY(35px)";
+
+    section.style.transition =
+        "opacity .8s ease, transform .8s ease";
+
+    observer.observe(section);
+
+});
+
+</script>
+
+
+</body>
+</html>
