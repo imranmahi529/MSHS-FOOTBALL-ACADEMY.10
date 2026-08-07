@@ -1,96 +1,2019 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>মরহুম সাজ্জাদ হোসাইন স্মৃতি ফুটবল একাডেমি</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>মরহুম সাজ্জাদ হোসাইন স্মৃতি ফুটবল একাডেমি</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <meta name="description"
+        content="মরহুম সাজ্জাদ হোসাইন স্মৃতি ফুটবল একাডেমির অফিসিয়াল ওয়েবসাইট।">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<header class="header">
 
-<div class="container">
+<!-- =====================================================
+     PRELOADER
+===================================================== -->
 
-<a href="index.html" class="logo">
+<div id="preloader">
 
-<img src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_0000000036d0720695474bda0a2cebbb.png">
+    <div class="loader-ball">
+        ⚽
+    </div>
 
-<h2>MSHS Football Academy</h2>
-
-</a>
-
-<nav>
-
-<ul>
-
-<li><a href="index.html">হোম</a></li>
-
-<li><a href="about.html">পরিচিতি</a></li>
-
-<li><a href="players.html">একাডেমি প্লেয়ার</a></li>
-
-<li><a href="gallery.html">গ্যালারি</a></li>
-
-<li><a href="registration.html">রেজিস্ট্রেশন</a></li>
-
-<li><a href="sponsors.html">স্পনসর</a></li>
-
-</ul>
-
-</nav>
+    <span>MSHS FOOTBALL ACADEMY</span>
 
 </div>
+
+
+<!-- =====================================================
+     HEADER / NAVBAR
+===================================================== -->
+
+<header class="main-header">
+
+    <div class="header-container">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-logo">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_0000000036d0720695474bda0a2cebbb.png"
+                alt="MSHS Football Academy Logo">
+
+            </div>
+
+            <div class="brand-text">
+
+                <strong>MSHS</strong>
+
+                <span>FOOTBALL ACADEMY</span>
+
+            </div>
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav class="desktop-nav">
+
+            <a href="index.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                হোম
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                পরিচিতি
+            </a>
+
+            <a href="players.html">
+                <i class="fa-solid fa-futbol"></i>
+                একাডেমি প্লেয়ার
+            </a>
+
+            <a href="gallery.html">
+                <i class="fa-solid fa-images"></i>
+                গ্যালারি
+            </a>
+
+            <a href="registration.html">
+                <i class="fa-solid fa-pen-to-square"></i>
+                রেজিস্ট্রেশন
+            </a>
+
+            <a href="sponsors.html">
+                <i class="fa-solid fa-handshake"></i>
+                স্পনসর
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTION -->
+
+        <div class="header-action">
+
+            <a href="registration.html" class="join-button">
+
+                <i class="fa-solid fa-user-plus"></i>
+
+                Join Academy
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button class="mobile-menu-button"
+                    id="mobileMenuButton"
+                    aria-label="Open Menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            হোম
+        </a>
+
+        <a href="about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            পরিচিতি
+        </a>
+
+        <a href="players.html">
+            <i class="fa-solid fa-futbol"></i>
+            একাডেমি প্লেয়ার
+        </a>
+
+        <a href="gallery.html">
+            <i class="fa-solid fa-images"></i>
+            গ্যালারি
+        </a>
+
+        <a href="registration.html">
+            <i class="fa-solid fa-pen-to-square"></i>
+            রেজিস্ট্রেশন
+        </a>
+
+        <a href="sponsors.html">
+            <i class="fa-solid fa-handshake"></i>
+            স্পনসর
+        </a>
+
+    </div>
 
 </header>
 
-<section class="hero">
 
-<img class="bg"
 
-src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/1000065105.jpg">
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
 
-<div class="overlay"></div>
+<main>
 
-<div class="hero-content">
 
-<img class="hero-logo"
+<section class="hero-section">
 
-src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_0000000036d0720695474bda0a2cebbb.png">
 
-<h1>
+    <!-- BACKGROUND -->
 
-মরহুম সাজ্জাদ হোসাইন
+    <div class="hero-background">
 
-<br>
+        <img
+        src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/1000065105.jpg"
+        alt="Football Academy Background">
 
-স্মৃতি ফুটবল একাডেমি
+    </div>
 
-</h1>
 
-<p>
+    <!-- DARK OVERLAY -->
 
-Dream • Discipline • Success
+    <div class="hero-overlay"></div>
 
-</p>
 
-<a href="registration.html" class="btn">
+    <!-- DECORATIVE GRAPHICS -->
 
-ভর্তি আবেদন
+    <div class="hero-circle circle-one"></div>
 
-</a>
+    <div class="hero-circle circle-two"></div>
 
-</div>
+    <div class="hero-line line-one"></div>
+
+    <div class="hero-line line-two"></div>
+
+
+    <!-- HERO CONTENT -->
+
+    <div class="hero-container">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="hero-content">
+
+
+            <div class="hero-badge">
+
+                <span class="live-dot"></span>
+
+                OFFICIAL FOOTBALL ACADEMY
+
+            </div>
+
+
+            <h1>
+
+                মরহুম সাজ্জাদ হোসাইন
+
+                <span>
+                    স্মৃতি ফুটবল একাডেমি
+                </span>
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                তারুণ্যের শক্তি, ফুটবলের স্বপ্ন এবং
+                ভবিষ্যতের তারকা তৈরির প্রত্যয়ে
+                আমাদের পথচলা।
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="players.html" class="hero-button primary">
+
+                    <i class="fa-solid fa-futbol"></i>
+
+                    আমাদের খেলোয়াড়
+
+                </a>
+
+
+                <a href="registration.html" class="hero-button secondary">
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    একাডেমিতে যোগ দিন
+
+                </a>
+
+            </div>
+
+
+            <!-- MINI STATS -->
+
+            <div class="hero-stats">
+
+
+                <div class="hero-stat">
+
+                    <strong>01</strong>
+
+                    <span>Academy</span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>∞</strong>
+
+                    <span>Dreams</span>
+
+                </div>
+
+
+                <div class="hero-stat">
+
+                    <strong>⚽</strong>
+
+                    <span>Football</span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT 3D LOGO -->
+
+        <div class="hero-visual">
+
+
+            <div class="visual-ring ring-one"></div>
+
+            <div class="visual-ring ring-two"></div>
+
+
+            <div class="hero-logo-card">
+
+
+                <div class="logo-glow"></div>
+
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_0000000036d0720695474bda0a2cebbb.png"
+                alt="MSHS Football Academy">
+
+
+                <div class="logo-card-text">
+
+                    <span>ESTABLISHED FOR</span>
+
+                    <strong>THE NEXT GENERATION</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="floating-ball ball-one">
+                ⚽
+            </div>
+
+            <div class="floating-ball ball-two">
+                ⚽
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- SCROLL INDICATOR -->
+
+    <div class="scroll-indicator">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </div>
+
 
 </section>
+
+
+<!-- =====================================================
+     PART 1 END
+===================================================== -->
+<!-- =====================================================
+     ABOUT / ACADEMY INTRO SECTION
+===================================================== -->
+
+<section class="about-preview-section">
+
+    <div class="section-bg-text">ACADEMY</div>
+
+    <div class="container about-preview-grid">
+
+
+        <!-- IMAGE -->
+
+        <div class="about-preview-image">
+
+            <div class="image-frame">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/1000065105.jpg"
+                alt="MSHS Football Academy">
+
+            </div>
+
+            <div class="experience-badge">
+
+                <strong>MSHS</strong>
+
+                <span>Football Academy</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+
+        <div class="about-preview-content">
+
+            <div class="section-label">
+                <span></span>
+                ABOUT OUR ACADEMY
+            </div>
+
+            <h2>
+
+                ফুটবল শুধু খেলা নয়,
+                <span>এটা আমাদের স্বপ্ন।</span>
+
+            </h2>
+
+            <p>
+
+                মরহুম সাজ্জাদ হোসাইন স্মৃতি ফুটবল একাডেমি
+                তরুণ ফুটবলারদের প্রতিভা বিকাশ, শৃঙ্খলা,
+                নেতৃত্ব এবং খেলাধুলার প্রতি ভালোবাসা তৈরির
+                একটি প্ল্যাটফর্ম।
+
+            </p>
+
+            <p>
+
+                আমাদের লক্ষ্য হলো স্থানীয় পর্যায় থেকে
+                প্রতিভাবান খেলোয়াড়দের খুঁজে বের করে
+                তাদের সঠিক প্রশিক্ষণ ও সুযোগের মাধ্যমে
+                ভবিষ্যতের সফল ফুটবলার হিসেবে গড়ে তোলা।
+
+            </p>
+
+
+            <div class="about-features">
+
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-futbol"></i>
+
+                    <div>
+
+                        <strong>Football Training</strong>
+
+                        <span>দক্ষতা উন্নয়ন</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-person-running"></i>
+
+                    <div>
+
+                        <strong>Player Development</strong>
+
+                        <span>খেলোয়াড় তৈরি</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <i class="fa-solid fa-medal"></i>
+
+                    <div>
+
+                        <strong>Future Champions</strong>
+
+                        <span>সাফল্যের লক্ষ্য</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <a href="about.html" class="section-button">
+
+                বিস্তারিত পরিচিতি
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOUNDER SECTION
+===================================================== -->
+
+<section class="founder-preview-section">
+
+    <div class="section-bg-text">FOUNDER</div>
+
+    <div class="container">
+
+
+        <div class="section-heading-center">
+
+            <div class="section-label">
+
+                <span></span>
+
+                OUR FOUNDER
+
+                <span></span>
+
+            </div>
+
+            <h2>
+
+                যিনি স্বপ্ন দেখেছেন
+
+                <span>আগামীর ফুটবলের</span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="founder-preview-card">
+
+
+            <!-- FOUNDER IMAGE -->
+
+            <div class="founder-preview-image">
+
+                <div class="founder-image-glow"></div>
+
+                <div class="founder-image-box">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_000000001604820b9ca0f506fd6a221a.png"
+                    alt="প্রতিষ্ঠাতা ইমরান হোসাইন মাহি">
+
+                </div>
+
+            </div>
+
+
+            <!-- FOUNDER CONTENT -->
+
+            <div class="founder-preview-content">
+
+                <div class="founder-number">
+                    01
+                </div>
+
+                <span class="profile-label">
+                    FOUNDER & DIRECTOR
+                </span>
+
+                <h3>
+                    ইমরান হোসাইন মাহি
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <p>
+
+                    একজন তরুণ উদ্যোক্তা ও ফুটবলপ্রেমী হিসেবে
+                    তরুণ প্রজন্মকে খেলাধুলার সঙ্গে যুক্ত করা
+                    এবং প্রতিভাবান ফুটবলারদের সামনে এগিয়ে
+                    নেওয়ার লক্ষ্যেই এই একাডেমির পথচলা।
+
+                </p>
+
+                <p>
+
+                    তাঁর স্বপ্ন—একটি শক্তিশালী ফুটবল
+                    প্ল্যাটফর্ম তৈরি করা, যেখানে প্রতিটি
+                    তরুণ খেলোয়াড় নিজের প্রতিভা প্রকাশের
+                    সুযোগ পাবে।
+
+                </p>
+
+
+                <a href="founder.html" class="profile-button">
+
+                    আমার সম্পর্কে
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SAJJAD HOSSAIN MEMORIAL SECTION
+===================================================== -->
+
+<section class="memorial-preview-section">
+
+    <div class="memorial-overlay"></div>
+
+    <div class="container">
+
+
+        <div class="section-heading-center light">
+
+            <div class="section-label">
+
+                <span></span>
+
+                IN LOVING MEMORY
+
+                <span></span>
+
+            </div>
+
+            <h2>
+
+                যার স্মৃতিকে ঘিরে
+
+                <span>আমাদের পথচলা</span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="memorial-preview-card">
+
+
+            <!-- IMAGE -->
+
+            <div class="memorial-image-area">
+
+                <div class="memorial-frame">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/FB_IMG_1786139968489.jpg"
+                    alt="মরহুম সাজ্জাদ হোসাইন">
+
+                </div>
+
+                <div class="memorial-stamp">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <span>IN MEMORY</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="memorial-preview-content">
+
+                <span class="memorial-label">
+                    THE NAME BEHIND THE ACADEMY
+                </span>
+
+                <h3>
+                    মরহুম সাজ্জাদ হোসাইন
+                </h3>
+
+                <div class="memorial-line"></div>
+
+                <p>
+
+                    তাঁর স্মৃতি, আদর্শ ও ভালোবাসাকে
+                    নতুন প্রজন্মের মাঝে বাঁচিয়ে রাখার
+                    প্রত্যয়েই এই একাডেমির যাত্রা।
+
+                </p>
+
+                <p>
+
+                    তাঁর নামে প্রতিষ্ঠিত এই প্ল্যাটফর্মের
+                    মাধ্যমে তরুণদের খেলাধুলায় উৎসাহিত
+                    করা এবং সুন্দর ভবিষ্যতের পথে এগিয়ে
+                    নেওয়াই আমাদের অন্যতম উদ্দেশ্য।
+
+                </p>
+
+
+                <a href="sajjad-hossain.html"
+                   class="profile-button memorial-button">
+
+                    তাঁর সম্পর্কে জানুন
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PART 2 END
+===================================================== -->
+<!-- =====================================================
+     ACADEMY PLAYERS SECTION
+===================================================== -->
+
+<section class="players-preview-section">
+
+    <div class="section-bg-text">PLAYERS</div>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <div class="section-label">
+
+                    <span></span>
+
+                    OUR PLAYERS
+
+                </div>
+
+                <h2>
+
+                    আমাদের
+
+                    <span>ফুটবল যোদ্ধারা</span>
+
+                </h2>
+
+            </div>
+
+
+            <a href="players.html" class="view-all-button">
+
+                সকল খেলোয়াড়
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="players-grid">
+
+
+            <!-- PLAYER 01 -->
+
+            <article class="player-card">
+
+                <div class="player-card-image">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3071.JPG"
+                    alt="Academy Player">
+
+                    <div class="player-number">
+                        01
+                    </div>
+
+                    <div class="player-position">
+                        PLAYER
+                    </div>
+
+                </div>
+
+
+                <div class="player-card-content">
+
+                    <span>
+                        ACADEMY PLAYER
+                    </span>
+
+                    <h3>
+                        Player Profile
+                    </h3>
+
+                    <div class="player-card-footer">
+
+                        <span>
+                            MSHS Academy
+                        </span>
+
+                        <a href="players.html">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PLAYER 02 -->
+
+            <article class="player-card">
+
+                <div class="player-card-image">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3074.JPG"
+                    alt="Academy Player">
+
+                    <div class="player-number">
+                        02
+                    </div>
+
+                    <div class="player-position">
+                        PLAYER
+                    </div>
+
+                </div>
+
+
+                <div class="player-card-content">
+
+                    <span>
+                        ACADEMY PLAYER
+                    </span>
+
+                    <h3>
+                        Player Profile
+                    </h3>
+
+                    <div class="player-card-footer">
+
+                        <span>
+                            MSHS Academy
+                        </span>
+
+                        <a href="players.html">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- PLAYER 03 -->
+
+            <article class="player-card">
+
+                <div class="player-card-image">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3092.JPG"
+                    alt="Academy Player">
+
+                    <div class="player-number">
+                        03
+                    </div>
+
+                    <div class="player-position">
+                        PLAYER
+                    </div>
+
+                </div>
+
+
+                <div class="player-card-content">
+
+                    <span>
+                        ACADEMY PLAYER
+                    </span>
+
+                    <h3>
+                        Player Profile
+                    </h3>
+
+                    <div class="player-card-footer">
+
+                        <span>
+                            MSHS Academy
+                        </span>
+
+                        <a href="players.html">
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="players-bottom">
+
+            <p>
+                প্রতিটি খেলোয়াড়ের আলাদা প্রোফাইল দেখতে
+                Academy Players পেজে যান।
+            </p>
+
+            <a href="players.html" class="section-button">
+
+                View All Players
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY PREVIEW SECTION
+===================================================== -->
+
+<section class="gallery-preview-section">
+
+    <div class="gallery-dark-overlay"></div>
+
+    <div class="container">
+
+
+        <div class="section-heading-center light">
+
+            <div class="section-label">
+
+                <span></span>
+
+                OUR MOMENTS
+
+                <span></span>
+
+            </div>
+
+            <h2>
+
+                মাঠের
+
+                <span>স্মরণীয় মুহূর্ত</span>
+
+            </h2>
+
+            <p>
+
+                আমাদের একাডেমির প্রশিক্ষণ, খেলোয়াড়,
+                অনুষ্ঠান ও বিভিন্ন কার্যক্রমের কিছু মুহূর্ত।
+
+            </p>
+
+        </div>
+
+
+        <div class="gallery-preview-grid">
+
+
+            <!-- IMAGE 01 -->
+
+            <a href="gallery.html"
+               class="gallery-item gallery-large">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3071.JPG"
+                alt="Academy Gallery">
+
+                <div class="gallery-item-overlay">
+
+                    <span>
+                        ACADEMY MOMENT
+                    </span>
+
+                    <i class="fa-solid fa-expand"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- IMAGE 02 -->
+
+            <a href="gallery.html"
+               class="gallery-item">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3074.JPG"
+                alt="Academy Gallery">
+
+                <div class="gallery-item-overlay">
+
+                    <span>
+                        TRAINING
+                    </span>
+
+                    <i class="fa-solid fa-expand"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- IMAGE 03 -->
+
+            <a href="gallery.html"
+               class="gallery-item">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3092.JPG"
+                alt="Academy Gallery">
+
+                <div class="gallery-item-overlay">
+
+                    <span>
+                        FOOTBALL
+                    </span>
+
+                    <i class="fa-solid fa-expand"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- IMAGE 04 -->
+
+            <a href="gallery.html"
+               class="gallery-item">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/IMG_3654.JPG"
+                alt="Academy Gallery">
+
+                <div class="gallery-item-overlay">
+
+                    <span>
+                        ACADEMY
+                    </span>
+
+                    <i class="fa-solid fa-expand"></i>
+
+                </div>
+
+            </a>
+
+
+            <!-- IMAGE 05 -->
+
+            <a href="gallery.html"
+               class="gallery-item gallery-wide">
+
+                <img
+                src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/FB_IMG_1786139968489.jpg"
+                alt="Academy Gallery">
+
+                <div class="gallery-item-overlay">
+
+                    <span>
+                        IN MEMORY
+                    </span>
+
+                    <i class="fa-solid fa-expand"></i>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+
+        <div class="gallery-bottom">
+
+            <a href="gallery.html" class="section-button">
+
+                সম্পূর্ণ গ্যালারি দেখুন
+
+                <i class="fa-solid fa-images"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PART 3 END
+===================================================== -->
+<!-- =====================================================
+     REGISTRATION CTA SECTION
+===================================================== -->
+
+<section class="registration-cta-section">
+
+    <div class="registration-shape shape-one"></div>
+    <div class="registration-shape shape-two"></div>
+
+    <div class="container registration-cta-container">
+
+
+        <div class="registration-cta-content">
+
+            <div class="section-label">
+
+                <span></span>
+
+                JOIN OUR ACADEMY
+
+            </div>
+
+            <h2>
+
+                তোমার ফুটবল স্বপ্নকে
+
+                <span>বাস্তবে রূপ দাও।</span>
+
+            </h2>
+
+            <p>
+
+                ফুটবলের প্রতি তোমার ভালোবাসা আছে?
+                নিজের প্রতিভাকে আরও উন্নত করতে চাও?
+                আজই আমাদের একাডেমিতে রেজিস্ট্রেশন করো।
+
+            </p>
+
+
+            <div class="registration-buttons">
+
+                <a href="registration.html"
+                   class="hero-button primary">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    এখনই রেজিস্ট্রেশন
+
+                </a>
+
+                <a href="about.html"
+                   class="hero-button secondary">
+
+                    একাডেমি সম্পর্কে জানুন
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="registration-visual">
+
+            <div class="registration-ball">
+
+                ⚽
+
+            </div>
+
+            <div class="registration-ring"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SPONSORS SECTION
+===================================================== -->
+
+<section class="sponsors-preview-section">
+
+    <div class="container">
+
+
+        <div class="section-heading-center">
+
+            <div class="section-label">
+
+                <span></span>
+
+                OUR PARTNERS
+
+                <span></span>
+
+            </div>
+
+            <h2>
+
+                আমাদের
+
+                <span>সহযোগীরা</span>
+
+            </h2>
+
+            <p>
+
+                একাডেমির উন্নয়ন ও ভবিষ্যৎ পরিকল্পনায়
+                যারা আমাদের পাশে থাকবেন।
+
+            </p>
+
+        </div>
+
+
+        <div class="sponsors-grid">
+
+
+            <div class="sponsor-card">
+
+                <div class="sponsor-placeholder">
+
+                    <i class="fa-solid fa-handshake"></i>
+
+                    <span>YOUR LOGO</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="sponsor-card">
+
+                <div class="sponsor-placeholder">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>YOUR LOGO</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="sponsor-card">
+
+                <div class="sponsor-placeholder">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <span>YOUR LOGO</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="sponsor-card">
+
+                <div class="sponsor-placeholder">
+
+                    <i class="fa-solid fa-futbol"></i>
+
+                    <span>YOUR LOGO</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="sponsors-bottom">
+
+            <p>
+                আপনার প্রতিষ্ঠানও আমাদের
+                <strong>Official Sponsor</strong> হতে পারে।
+            </p>
+
+            <a href="sponsors.html" class="section-button">
+
+                Sponsor With Us
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOUNDER + MEMORIAL QUICK ACCESS
+===================================================== -->
+
+<section class="people-preview-section">
+
+    <div class="container">
+
+
+        <div class="section-heading-center">
+
+            <div class="section-label">
+
+                <span></span>
+
+                OUR STORY
+
+                <span></span>
+
+            </div>
+
+            <h2>
+
+                আমাদের
+
+                <span>গল্পের দুই গুরুত্বপূর্ণ মানুষ</span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="people-preview-grid">
+
+
+            <!-- FOUNDER -->
+
+            <a href="founder.html"
+               class="person-mini-card">
+
+
+                <div class="person-mini-image">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_000000001604820b9ca0f506fd6a221a.png"
+                    alt="ইমরান হোসাইন মাহি">
+
+                </div>
+
+
+                <div class="person-mini-content">
+
+                    <span>
+                        FOUNDER & DIRECTOR
+                    </span>
+
+                    <h3>
+                        ইমরান হোসাইন মাহি
+                    </h3>
+
+                    <p>
+                        প্রতিষ্ঠাতা ও পরিচালক
+                    </p>
+
+                    <div class="person-link">
+
+                        View Profile
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- SAJJAD HOSSAIN -->
+
+            <a href="sajjad-hossain.html"
+               class="person-mini-card memorial-mini">
+
+
+                <div class="person-mini-image">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/FB_IMG_1786139968489.jpg"
+                    alt="মরহুম সাজ্জাদ হোসাইন">
+
+                </div>
+
+
+                <div class="person-mini-content">
+
+                    <span>
+                        IN LOVING MEMORY
+                    </span>
+
+                    <h3>
+                        মরহুম সাজ্জাদ হোসাইন
+                    </h3>
+
+                    <p>
+                        যাঁর নামে একাডেমি
+                    </p>
+
+                    <div class="person-link">
+
+                        তাঁর সম্পর্কে
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PART 4 END
+===================================================== -->
+<!-- =====================================================
+     CONTACT SECTION
+===================================================== -->
+
+<section class="contact-preview-section">
+
+    <div class="container">
+
+
+        <div class="section-heading-center">
+
+            <div class="section-label">
+
+                <span></span>
+
+                CONTACT US
+
+                <span></span>
+
+            </div>
+
+            <h2>
+
+                আমাদের সাথে
+
+                <span>যোগাযোগ করুন</span>
+
+            </h2>
+
+            <p>
+
+                একাডেমি সম্পর্কে জানতে অথবা যেকোনো
+                প্রয়োজনে আমাদের সাথে যোগাযোগ করুন।
+
+            </p>
+
+        </div>
+
+
+        <div class="contact-preview-grid">
+
+
+            <!-- PHONE -->
+
+            <a href="tel:+8800000000000"
+               class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <span>CALL US</span>
+
+                    <strong>+880 0000-000000</strong>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right contact-arrow"></i>
+
+            </a>
+
+
+            <!-- FACEBOOK -->
+
+            <a href="#"
+               class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </div>
+
+                <div>
+
+                    <span>FACEBOOK</span>
+
+                    <strong>MSHS Football Academy</strong>
+
+                </div>
+
+                <i class="fa-solid fa-arrow-right contact-arrow"></i>
+
+            </a>
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-card">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <div>
+
+                    <span>LOCATION</span>
+
+                    <strong>Sunamganj, Bangladesh</strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="contact-page-button">
+
+            <a href="contact.html" class="section-button">
+
+                Contact Page
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="main-footer">
+
+
+    <div class="footer-top">
+
+        <div class="container footer-grid">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+
+                <a href="index.html" class="footer-logo">
+
+                    <img
+                    src="https://raw.githubusercontent.com/imranmahi529/MSHS-FOOTBALL-ACADEMY/refs/heads/main/file_0000000036d0720695474bda0a2cebbb.png"
+                    alt="MSHS Football Academy">
+
+                    <div>
+
+                        <strong>MSHS</strong>
+
+                        <span>FOOTBALL ACADEMY</span>
+
+                    </div>
+
+                </a>
+
+
+                <p>
+
+                    তারুণ্যের শক্তি ও ফুটবলের স্বপ্নকে
+                    সামনে রেখে ভবিষ্যতের ফুটবল তারকা
+                    তৈরির আমাদের নিরন্তর পথচলা।
+
+                </p>
+
+
+                <div class="footer-social">
+
+
+                    <a href="#" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#" aria-label="TikTok">
+
+                        <i class="fa-brands fa-tiktok"></i>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    হোম
+                </a>
+
+                <a href="about.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    পরিচিতি
+                </a>
+
+                <a href="players.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    একাডেমি প্লেয়ার
+                </a>
+
+                <a href="gallery.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    গ্যালারি
+                </a>
+
+                <a href="registration.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    রেজিস্ট্রেশন
+                </a>
+
+            </div>
+
+
+
+            <!-- ACADEMY -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Academy
+                </h3>
+
+                <a href="sponsors.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    স্পনসর
+                </a>
+
+                <a href="founder.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    প্রতিষ্ঠাতা
+                </a>
+
+                <a href="sajjad-hossain.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    সাজ্জাদ হোসাইন
+                </a>
+
+                <a href="contact.html">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    যোগাযোগ
+                </a>
+
+            </div>
+
+
+
+            <!-- FOOTER CONTACT -->
+
+            <div class="footer-column footer-contact">
+
+                <h3>
+                    Get In Touch
+                </h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Sunamganj, Bangladesh
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    +880 0000-000000
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@mshsfootballacademy.com
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom-inner">
+
+
+            <p>
+
+                © <span id="currentYear"></span>
+
+                MSHS Football Academy.
+
+                All Rights Reserved.
+
+            </p>
+
+
+            <p>
+
+                Designed with
+
+                <i class="fa-solid fa-heart"></i>
+
+                for Football
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button id="backToTop"
+        class="back-to-top"
+        aria-label="Back to Top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* ==============================
+       PRELOADER
+    ============================== */
+
+    const preloader =
+        document.getElementById("preloader");
+
+    setTimeout(function () {
+
+        if (preloader) {
+
+            preloader.classList.add("hide");
+
+        }
+
+    }, 900);
+
+
+
+    /* ==============================
+       MOBILE MENU
+    ============================== */
+
+    const menuButton =
+        document.getElementById("mobileMenuButton");
+
+    const mobileNav =
+        document.getElementById("mobileNav");
+
+
+    if (menuButton && mobileNav) {
+
+        menuButton.addEventListener("click", function () {
+
+            mobileNav.classList.toggle("open");
+
+            const icon =
+                menuButton.querySelector("i");
+
+
+            if (mobileNav.classList.contains("open")) {
+
+                icon.classList.remove("fa-bars");
+
+                icon.classList.add("fa-xmark");
+
+            } else {
+
+                icon.classList.remove("fa-xmark");
+
+                icon.classList.add("fa-bars");
+
+            }
+
+        });
+
+
+        mobileNav.querySelectorAll("a")
+        .forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                mobileNav.classList.remove("open");
+
+                iconReset();
+
+            });
+
+        });
+
+    }
+
+
+    function iconReset() {
+
+        const icon =
+            menuButton.querySelector("i");
+
+        if (icon) {
+
+            icon.classList.remove("fa-xmark");
+
+            icon.classList.add("fa-bars");
+
+        }
+
+    }
+
+
+
+    /* ==============================
+       BACK TO TOP
+    ============================== */
+
+    const backToTop =
+        document.getElementById("backToTop");
+
+
+    window.addEventListener("scroll", function () {
+
+        if (!backToTop) return;
+
+
+        if (window.scrollY > 500) {
+
+            backToTop.classList.add("show");
+
+        } else {
+
+            backToTop.classList.remove("show");
+
+        }
+
+    });
+
+
+    if (backToTop) {
+
+        backToTop.addEventListener("click", function () {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+    }
+
+
+
+    /* ==============================
+       CURRENT YEAR
+    ============================== */
+
+    const year =
+        document.getElementById("currentYear");
+
+    if (year) {
+
+        year.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+});
+
+</script>
+
+
+</main>
+
+
+</body>
+
+</html>
